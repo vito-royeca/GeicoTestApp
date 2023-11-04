@@ -21,6 +21,24 @@
 		5836850A2AF6B99C00DFE9EB /* CoreLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583685082AF6B99C00DFE9EB /* CoreLocationModel.swift */; };
 		5836850C2AF6DC4B00DFE9EB /* CoreMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */; };
 		5836850D2AF6DC4B00DFE9EB /* CoreMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */; };
+		58E6033A2AF7060E0065D43B /* MotionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603392AF7060E0065D43B /* MotionDetector.swift */; };
+		58E6033B2AF7060E0065D43B /* MotionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603392AF7060E0065D43B /* MotionDetector.swift */; };
+		58E6033C2AF7060E0065D43B /* MotionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603392AF7060E0065D43B /* MotionDetector.swift */; };
+		58E6033E2AF706180065D43B /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E6033D2AF706180065D43B /* DoubleExtension.swift */; };
+		58E6033F2AF706180065D43B /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E6033D2AF706180065D43B /* DoubleExtension.swift */; };
+		58E603402AF706180065D43B /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E6033D2AF706180065D43B /* DoubleExtension.swift */; };
+		58E603422AF7062F0065D43B /* BubbleLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603412AF7062F0065D43B /* BubbleLevel.swift */; };
+		58E603432AF7062F0065D43B /* BubbleLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603412AF7062F0065D43B /* BubbleLevel.swift */; };
+		58E603442AF7062F0065D43B /* BubbleLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603412AF7062F0065D43B /* BubbleLevel.swift */; };
+		58E603462AF7077B0065D43B /* NeedleSeismometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603452AF7077B0065D43B /* NeedleSeismometer.swift */; };
+		58E603472AF7077B0065D43B /* NeedleSeismometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603452AF7077B0065D43B /* NeedleSeismometer.swift */; };
+		58E603482AF7077B0065D43B /* NeedleSeismometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603452AF7077B0065D43B /* NeedleSeismometer.swift */; };
+		58E6034A2AF707A30065D43B /* GaugeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603492AF707A30065D43B /* GaugeBackground.swift */; };
+		58E6034B2AF707A30065D43B /* GaugeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603492AF707A30065D43B /* GaugeBackground.swift */; };
+		58E6034C2AF707A30065D43B /* GaugeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E603492AF707A30065D43B /* GaugeBackground.swift */; };
+		58E6034E2AF7088D0065D43B /* OrientationDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E6034D2AF7088D0065D43B /* OrientationDataView.swift */; };
+		58E6034F2AF7088D0065D43B /* OrientationDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E6034D2AF7088D0065D43B /* OrientationDataView.swift */; };
+		58E603502AF7088D0065D43B /* OrientationDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E6034D2AF7088D0065D43B /* OrientationDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +73,12 @@
 		583685072AF6B82E00DFE9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		583685082AF6B99C00DFE9EB /* CoreLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationModel.swift; sourceTree = "<group>"; };
 		5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionView.swift; sourceTree = "<group>"; };
+		58E603392AF7060E0065D43B /* MotionDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionDetector.swift; sourceTree = "<group>"; };
+		58E6033D2AF706180065D43B /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		58E603412AF7062F0065D43B /* BubbleLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleLevel.swift; sourceTree = "<group>"; };
+		58E603452AF7077B0065D43B /* NeedleSeismometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleSeismometer.swift; sourceTree = "<group>"; };
+		58E603492AF707A30065D43B /* GaugeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeBackground.swift; sourceTree = "<group>"; };
+		58E6034D2AF7088D0065D43B /* OrientationDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +177,13 @@
 		58E603372AF6EE6D0065D43B /* Motion */ = {
 			isa = PBXGroup;
 			children = (
+				58E603412AF7062F0065D43B /* BubbleLevel.swift */,
 				5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */,
+				58E6033D2AF706180065D43B /* DoubleExtension.swift */,
+				58E603492AF707A30065D43B /* GaugeBackground.swift */,
+				58E603392AF7060E0065D43B /* MotionDetector.swift */,
+				58E603452AF7077B0065D43B /* NeedleSeismometer.swift */,
+				58E6034D2AF7088D0065D43B /* OrientationDataView.swift */,
 			);
 			path = Motion;
 			sourceTree = "<group>";
@@ -288,11 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E603462AF7077B0065D43B /* NeedleSeismometer.swift in Sources */,
+				58E6034A2AF707A30065D43B /* GaugeBackground.swift in Sources */,
+				58E603422AF7062F0065D43B /* BubbleLevel.swift in Sources */,
 				583685052AF6B64B00DFE9EB /* CoreLocationView.swift in Sources */,
 				583685022AF6B62100DFE9EB /* MainView.swift in Sources */,
+				58E6034E2AF7088D0065D43B /* OrientationDataView.swift in Sources */,
 				583684D62AF6B53500DFE9EB /* GeicoTestAppApp.swift in Sources */,
 				583685092AF6B99C00DFE9EB /* CoreLocationModel.swift in Sources */,
 				5836850C2AF6DC4B00DFE9EB /* CoreMotionView.swift in Sources */,
+				58E6033E2AF706180065D43B /* DoubleExtension.swift in Sources */,
+				58E6033A2AF7060E0065D43B /* MotionDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E603432AF7062F0065D43B /* BubbleLevel.swift in Sources */,
+				58E6034F2AF7088D0065D43B /* OrientationDataView.swift in Sources */,
+				58E6033F2AF706180065D43B /* DoubleExtension.swift in Sources */,
 				583684E92AF6B53700DFE9EB /* GeicoTestAppTests.swift in Sources */,
+				58E6033B2AF7060E0065D43B /* MotionDetector.swift in Sources */,
+				58E603472AF7077B0065D43B /* NeedleSeismometer.swift in Sources */,
+				58E6034B2AF707A30065D43B /* GaugeBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +350,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E603402AF706180065D43B /* DoubleExtension.swift in Sources */,
+				58E603502AF7088D0065D43B /* OrientationDataView.swift in Sources */,
+				58E6034C2AF707A30065D43B /* GaugeBackground.swift in Sources */,
 				583684F52AF6B53700DFE9EB /* GeicoTestAppUITestsLaunchTests.swift in Sources */,
 				5836850D2AF6DC4B00DFE9EB /* CoreMotionView.swift in Sources */,
 				583685032AF6B62100DFE9EB /* MainView.swift in Sources */,
+				58E603482AF7077B0065D43B /* NeedleSeismometer.swift in Sources */,
 				5836850A2AF6B99C00DFE9EB /* CoreLocationModel.swift in Sources */,
 				583685062AF6B64B00DFE9EB /* CoreLocationView.swift in Sources */,
 				583684F32AF6B53700DFE9EB /* GeicoTestAppUITests.swift in Sources */,
+				58E6033C2AF7060E0065D43B /* MotionDetector.swift in Sources */,
+				58E603442AF7062F0065D43B /* BubbleLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

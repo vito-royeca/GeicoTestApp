@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct CoreMotionView: View {
+    @EnvironmentObject var motionDetector: MotionDetector
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            BubbleLevel()
+            OrientationDataView()
+                .padding(.top, 80)
+            NeedleSeismometer()
+        }
+        .onAppear {
+            motionDetector.start()
+        }
+        .onDisappear {
+            motionDetector.stop()
+        }
     }
 }
 
 #Preview {
-    CoreMotionView()
+    let motionDetector = MotionDetector(updateInterval: 0.01).started()
+    
+    return CoreMotionView()
+        .environmentObject(motionDetector)
 }
