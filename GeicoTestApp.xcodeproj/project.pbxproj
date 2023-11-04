@@ -109,14 +109,12 @@
 		583684D42AF6B53500DFE9EB /* GeicoTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				58E603382AF6EE880065D43B /* Items */,
+				58E603372AF6EE6D0065D43B /* Motion */,
+				58E603362AF6EE610065D43B /* Location */,
 				583685072AF6B82E00DFE9EB /* Info.plist */,
 				583684D52AF6B53500DFE9EB /* GeicoTestAppApp.swift */,
-				583684D72AF6B53500DFE9EB /* ContentView.swift */,
-				583685082AF6B99C00DFE9EB /* CoreLocationModel.swift */,
-				583685042AF6B64B00DFE9EB /* CoreLocationView.swift */,
-				5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */,
 				583685012AF6B62100DFE9EB /* MainView.swift */,
-				583684D92AF6B53500DFE9EB /* Item.swift */,
 				583684DB2AF6B53600DFE9EB /* Assets.xcassets */,
 				583684DD2AF6B53600DFE9EB /* Preview Content */,
 			);
@@ -146,6 +144,32 @@
 				583684F42AF6B53700DFE9EB /* GeicoTestAppUITestsLaunchTests.swift */,
 			);
 			path = GeicoTestAppUITests;
+			sourceTree = "<group>";
+		};
+		58E603362AF6EE610065D43B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				583685082AF6B99C00DFE9EB /* CoreLocationModel.swift */,
+				583685042AF6B64B00DFE9EB /* CoreLocationView.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		58E603372AF6EE6D0065D43B /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
+		58E603382AF6EE880065D43B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				583684D72AF6B53500DFE9EB /* ContentView.swift */,
+				583684D92AF6B53500DFE9EB /* Item.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
