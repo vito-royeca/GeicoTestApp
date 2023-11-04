@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		583684D62AF6B53500DFE9EB /* GeicoTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583684D52AF6B53500DFE9EB /* GeicoTestAppApp.swift */; };
+		583684D82AF6B53500DFE9EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583684D72AF6B53500DFE9EB /* ContentView.swift */; };
+		583684DA2AF6B53500DFE9EB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583684D92AF6B53500DFE9EB /* Item.swift */; };
+		583684DC2AF6B53600DFE9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583684DB2AF6B53600DFE9EB /* Assets.xcassets */; };
+		583684DF2AF6B53600DFE9EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583684DE2AF6B53600DFE9EB /* Preview Assets.xcassets */; };
+		583684E92AF6B53700DFE9EB /* GeicoTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583684E82AF6B53700DFE9EB /* GeicoTestAppTests.swift */; };
+		583684F32AF6B53700DFE9EB /* GeicoTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583684F22AF6B53700DFE9EB /* GeicoTestAppUITests.swift */; };
+		583684F52AF6B53700DFE9EB /* GeicoTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583684F42AF6B53700DFE9EB /* GeicoTestAppUITestsLaunchTests.swift */; };
+		583685022AF6B62100DFE9EB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583685012AF6B62100DFE9EB /* MainView.swift */; };
+		583685032AF6B62100DFE9EB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583685012AF6B62100DFE9EB /* MainView.swift */; };
+		583685052AF6B64B00DFE9EB /* CoreLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583685042AF6B64B00DFE9EB /* CoreLocationView.swift */; };
+		583685062AF6B64B00DFE9EB /* CoreLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583685042AF6B64B00DFE9EB /* CoreLocationView.swift */; };
+		583685092AF6B99C00DFE9EB /* CoreLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583685082AF6B99C00DFE9EB /* CoreLocationModel.swift */; };
+		5836850A2AF6B99C00DFE9EB /* CoreLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583685082AF6B99C00DFE9EB /* CoreLocationModel.swift */; };
+		5836850C2AF6DC4B00DFE9EB /* CoreMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */; };
+		5836850D2AF6DC4B00DFE9EB /* CoreMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		583684E52AF6B53700DFE9EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 583684CA2AF6B53500DFE9EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 583684D12AF6B53500DFE9EB;
+			remoteInfo = GeicoTestApp;
+		};
+		583684EF2AF6B53700DFE9EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 583684CA2AF6B53500DFE9EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 583684D12AF6B53500DFE9EB;
+			remoteInfo = GeicoTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		583684D22AF6B53500DFE9EB /* GeicoTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeicoTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		583684D52AF6B53500DFE9EB /* GeicoTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeicoTestAppApp.swift; sourceTree = "<group>"; };
+		583684D72AF6B53500DFE9EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		583684D92AF6B53500DFE9EB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		583684DB2AF6B53600DFE9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		583684DE2AF6B53600DFE9EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		583684E42AF6B53700DFE9EB /* GeicoTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeicoTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		583684E82AF6B53700DFE9EB /* GeicoTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeicoTestAppTests.swift; sourceTree = "<group>"; };
+		583684EE2AF6B53700DFE9EB /* GeicoTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeicoTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		583684F22AF6B53700DFE9EB /* GeicoTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeicoTestAppUITests.swift; sourceTree = "<group>"; };
+		583684F42AF6B53700DFE9EB /* GeicoTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeicoTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		583685012AF6B62100DFE9EB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		583685042AF6B64B00DFE9EB /* CoreLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationView.swift; sourceTree = "<group>"; };
+		583685072AF6B82E00DFE9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		583685082AF6B99C00DFE9EB /* CoreLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationModel.swift; sourceTree = "<group>"; };
+		5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		583684CF2AF6B53500DFE9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583684E12AF6B53700DFE9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583684EB2AF6B53700DFE9EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		583684C92AF6B53500DFE9EB = {
+			isa = PBXGroup;
+			children = (
+				583684D42AF6B53500DFE9EB /* GeicoTestApp */,
+				583684E72AF6B53700DFE9EB /* GeicoTestAppTests */,
+				583684F12AF6B53700DFE9EB /* GeicoTestAppUITests */,
+				583684D32AF6B53500DFE9EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		583684D32AF6B53500DFE9EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				583684D22AF6B53500DFE9EB /* GeicoTestApp.app */,
+				583684E42AF6B53700DFE9EB /* GeicoTestAppTests.xctest */,
+				583684EE2AF6B53700DFE9EB /* GeicoTestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		583684D42AF6B53500DFE9EB /* GeicoTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				583685072AF6B82E00DFE9EB /* Info.plist */,
+				583684D52AF6B53500DFE9EB /* GeicoTestAppApp.swift */,
+				583684D72AF6B53500DFE9EB /* ContentView.swift */,
+				583685082AF6B99C00DFE9EB /* CoreLocationModel.swift */,
+				583685042AF6B64B00DFE9EB /* CoreLocationView.swift */,
+				5836850B2AF6DC4B00DFE9EB /* CoreMotionView.swift */,
+				583685012AF6B62100DFE9EB /* MainView.swift */,
+				583684D92AF6B53500DFE9EB /* Item.swift */,
+				583684DB2AF6B53600DFE9EB /* Assets.xcassets */,
+				583684DD2AF6B53600DFE9EB /* Preview Content */,
+			);
+			path = GeicoTestApp;
+			sourceTree = "<group>";
+		};
+		583684DD2AF6B53600DFE9EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				583684DE2AF6B53600DFE9EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		583684E72AF6B53700DFE9EB /* GeicoTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				583684E82AF6B53700DFE9EB /* GeicoTestAppTests.swift */,
+			);
+			path = GeicoTestAppTests;
+			sourceTree = "<group>";
+		};
+		583684F12AF6B53700DFE9EB /* GeicoTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				583684F22AF6B53700DFE9EB /* GeicoTestAppUITests.swift */,
+				583684F42AF6B53700DFE9EB /* GeicoTestAppUITestsLaunchTests.swift */,
+			);
+			path = GeicoTestAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		583684D12AF6B53500DFE9EB /* GeicoTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 583684F82AF6B53700DFE9EB /* Build configuration list for PBXNativeTarget "GeicoTestApp" */;
+			buildPhases = (
+				583684CE2AF6B53500DFE9EB /* Sources */,
+				583684CF2AF6B53500DFE9EB /* Frameworks */,
+				583684D02AF6B53500DFE9EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeicoTestApp;
+			productName = GeicoTestApp;
+			productReference = 583684D22AF6B53500DFE9EB /* GeicoTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		583684E32AF6B53700DFE9EB /* GeicoTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 583684FB2AF6B53700DFE9EB /* Build configuration list for PBXNativeTarget "GeicoTestAppTests" */;
+			buildPhases = (
+				583684E02AF6B53700DFE9EB /* Sources */,
+				583684E12AF6B53700DFE9EB /* Frameworks */,
+				583684E22AF6B53700DFE9EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				583684E62AF6B53700DFE9EB /* PBXTargetDependency */,
+			);
+			name = GeicoTestAppTests;
+			productName = GeicoTestAppTests;
+			productReference = 583684E42AF6B53700DFE9EB /* GeicoTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		583684ED2AF6B53700DFE9EB /* GeicoTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 583684FE2AF6B53700DFE9EB /* Build configuration list for PBXNativeTarget "GeicoTestAppUITests" */;
+			buildPhases = (
+				583684EA2AF6B53700DFE9EB /* Sources */,
+				583684EB2AF6B53700DFE9EB /* Frameworks */,
+				583684EC2AF6B53700DFE9EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				583684F02AF6B53700DFE9EB /* PBXTargetDependency */,
+			);
+			name = GeicoTestAppUITests;
+			productName = GeicoTestAppUITests;
+			productReference = 583684EE2AF6B53700DFE9EB /* GeicoTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		583684CA2AF6B53500DFE9EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					583684D12AF6B53500DFE9EB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					583684E32AF6B53700DFE9EB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 583684D12AF6B53500DFE9EB;
+					};
+					583684ED2AF6B53700DFE9EB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 583684D12AF6B53500DFE9EB;
+					};
+				};
+			};
+			buildConfigurationList = 583684CD2AF6B53500DFE9EB /* Build configuration list for PBXProject "GeicoTestApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 583684C92AF6B53500DFE9EB;
+			productRefGroup = 583684D32AF6B53500DFE9EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				583684D12AF6B53500DFE9EB /* GeicoTestApp */,
+				583684E32AF6B53700DFE9EB /* GeicoTestAppTests */,
+				583684ED2AF6B53700DFE9EB /* GeicoTestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		583684D02AF6B53500DFE9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583684DF2AF6B53600DFE9EB /* Preview Assets.xcassets in Resources */,
+				583684DC2AF6B53600DFE9EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583684E22AF6B53700DFE9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583684EC2AF6B53700DFE9EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		583684CE2AF6B53500DFE9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583684D82AF6B53500DFE9EB /* ContentView.swift in Sources */,
+				583685052AF6B64B00DFE9EB /* CoreLocationView.swift in Sources */,
+				583685022AF6B62100DFE9EB /* MainView.swift in Sources */,
+				583684DA2AF6B53500DFE9EB /* Item.swift in Sources */,
+				583684D62AF6B53500DFE9EB /* GeicoTestAppApp.swift in Sources */,
+				583685092AF6B99C00DFE9EB /* CoreLocationModel.swift in Sources */,
+				5836850C2AF6DC4B00DFE9EB /* CoreMotionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583684E02AF6B53700DFE9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583684E92AF6B53700DFE9EB /* GeicoTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583684EA2AF6B53700DFE9EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583684F52AF6B53700DFE9EB /* GeicoTestAppUITestsLaunchTests.swift in Sources */,
+				5836850D2AF6DC4B00DFE9EB /* CoreMotionView.swift in Sources */,
+				583685032AF6B62100DFE9EB /* MainView.swift in Sources */,
+				5836850A2AF6B99C00DFE9EB /* CoreLocationModel.swift in Sources */,
+				583685062AF6B64B00DFE9EB /* CoreLocationView.swift in Sources */,
+				583684F32AF6B53700DFE9EB /* GeicoTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		583684E62AF6B53700DFE9EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 583684D12AF6B53500DFE9EB /* GeicoTestApp */;
+			targetProxy = 583684E52AF6B53700DFE9EB /* PBXContainerItemProxy */;
+		};
+		583684F02AF6B53700DFE9EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 583684D12AF6B53500DFE9EB /* GeicoTestApp */;
+			targetProxy = 583684EF2AF6B53700DFE9EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		583684F62AF6B53700DFE9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		583684F72AF6B53700DFE9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		583684F92AF6B53700DFE9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GeicoTestApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 43CD66539H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeicoTestApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location permission to provide best functionality.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location permission to provide best functionality.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitoroyeca.geico.GeicoTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		583684FA2AF6B53700DFE9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GeicoTestApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 43CD66539H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeicoTestApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location permission to provide best functionality.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location permission to provide best functionality.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitoroyeca.geico.GeicoTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		583684FC2AF6B53700DFE9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitoroyeca.geico.GeicoTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeicoTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GeicoTestApp";
+			};
+			name = Debug;
+		};
+		583684FD2AF6B53700DFE9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitoroyeca.geico.GeicoTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeicoTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GeicoTestApp";
+			};
+			name = Release;
+		};
+		583684FF2AF6B53700DFE9EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitoroyeca.geico.GeicoTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeicoTestApp;
+			};
+			name = Debug;
+		};
+		583685002AF6B53700DFE9EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitoroyeca.geico.GeicoTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeicoTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		583684CD2AF6B53500DFE9EB /* Build configuration list for PBXProject "GeicoTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583684F62AF6B53700DFE9EB /* Debug */,
+				583684F72AF6B53700DFE9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		583684F82AF6B53700DFE9EB /* Build configuration list for PBXNativeTarget "GeicoTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583684F92AF6B53700DFE9EB /* Debug */,
+				583684FA2AF6B53700DFE9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		583684FB2AF6B53700DFE9EB /* Build configuration list for PBXNativeTarget "GeicoTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583684FC2AF6B53700DFE9EB /* Debug */,
+				583684FD2AF6B53700DFE9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		583684FE2AF6B53700DFE9EB /* Build configuration list for PBXNativeTarget "GeicoTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583684FF2AF6B53700DFE9EB /* Debug */,
+				583685002AF6B53700DFE9EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 583684CA2AF6B53500DFE9EB /* Project object */;
+}
