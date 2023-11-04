@@ -20,11 +20,6 @@ struct MainView: View {
                     Label("Core Motion",
                           systemImage: "circle.dotted.and.circle")
                 }
-            ContentView()
-                .tabItem {
-                    Label("Items",
-                          systemImage: "list.dash")
-                }
         }
     }
 }
