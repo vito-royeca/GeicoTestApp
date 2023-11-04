@@ -10,27 +10,52 @@ import CoreLocation
 import MapKit
 
 struct CoreLocationView: View {
-    @StateObject var model = CoreLocationModel()
+    @EnvironmentObject var model: CoreLocationModel
     
     var body: some View {
         GeometryReader { reader in
             VStack {
-                Map(coordinateRegion: $model.region,
-                    interactionModes: .all,
-                    showsUserLocation: true)
-                    .frame(width: reader.size.width,
-                           height: reader.size.height * 0.7)
-                buttonsview
+                switch model.authorizationStatus {
+                case .notDetermined:
+                    Text("Location Permissions not determined")
+                case .restricted:
+                    Text("Location Permissions restricted")
+                    settingsButton
+                case .denied:
+                    Text("Location Permissions deneid")
+                    settingsButton
+                case .authorizedAlways,
+                        .authorizedWhenInUse,
+                        .authorized:
+                    mapView
+                        .frame(height: reader.size.height * 0.7)
+                    listView
+                @unknown default:
+                    Text("Location Permissions unknown")
+                        .font(.title)
+                }
+                
             }
+            .frame(width: reader.size.width)
             .alert(item: $model.errorMessage) { error in
                 Alert(title: Text("Error"),
                       message: Text(error),
                       dismissButton: .default(Text("OK")))
             }
+            .onAppear {
+                model.requestWhenInUseAuthorization()
+            }
         }
     }
     
-    var buttonsview: some View {
+    var mapView: some View {
+        Map(coordinateRegion: $model.region,
+            interactionModes: .all,
+            showsUserLocation: true)
+            
+    }
+
+    var listView: some View {
         List {
             HStack {
                 Text("Location")
@@ -38,21 +63,6 @@ struct CoreLocationView: View {
                 Text("\(model.latitude), \(model.longitude)")
                     .monospaced()
             }
-            Button(action: {
-                model.requestWhenInUseAuthorization()
-            },
-                   label: {
-                Text("Request When In Use")
-            })
-            .disabled(model.autorizedWhenInUse)
-            
-            Button(action: {
-                model.requestAlwaysAuthorization()
-            },
-                   label: {
-                Text("Request Always")
-            })
-            .disabled(model.autorizedAlways)
 
             Toggle("Location Updates",
                    isOn: $model.locationMonitored)
@@ -67,8 +77,22 @@ struct CoreLocationView: View {
         }
         .listStyle(.plain)
     }
+    
+    var settingsButton: some View {
+        Button(action: {
+            if let url = URL(string:UIApplication.openSettingsURLString),
+               UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }, label: {
+            Text("Open App Settings")
+        })
+    }
 }
 
 #Preview {
-    CoreLocationView()
+    let model = CoreLocationModel()
+
+    return CoreLocationView()
+        .environmentObject(model)
 }

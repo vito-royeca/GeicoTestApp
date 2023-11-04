@@ -105,8 +105,8 @@
 		583684D42AF6B53500DFE9EB /* GeicoTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				58E603372AF6EE6D0065D43B /* Motion */,
 				58E603362AF6EE610065D43B /* Location */,
+				58E603372AF6EE6D0065D43B /* Motion */,
 				583685072AF6B82E00DFE9EB /* Info.plist */,
 				583684D52AF6B53500DFE9EB /* GeicoTestAppApp.swift */,
 				583685012AF6B62100DFE9EB /* MainView.swift */,
@@ -464,13 +464,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GeicoTestApp/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location permission to provide best functionality.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location permission to provide best functionality.";
+				INFOPLIST_KEY_CFBundleDisplayName = "GEICO Test App";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location permission to provide the best functionality.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location permission to provide the best functionality.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location permission to provide the best functionality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,13 +497,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GeicoTestApp/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location permission to provide best functionality.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location permission to provide best functionality.";
+				INFOPLIST_KEY_CFBundleDisplayName = "GEICO Test App";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location permission to provide the best functionality.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs location permission to provide the best functionality.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location permission to provide the best functionality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

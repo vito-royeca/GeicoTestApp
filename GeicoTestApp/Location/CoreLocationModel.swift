@@ -9,9 +9,9 @@ import Foundation
 import CoreLocation
 import MapKit
 
+@MainActor
 class CoreLocationModel: NSObject, ObservableObject {
-    @Published var autorizedWhenInUse = false
-    @Published var autorizedAlways = false
+    @Published var authorizationStatus: CLAuthorizationStatus = .notDetermined
     @Published var locationMonitored = false
     @Published var latitude:CLLocationDegrees = 0
     @Published var longitude:CLLocationDegrees = 0
@@ -28,25 +28,16 @@ class CoreLocationModel: NSObject, ObservableObject {
         locationManager?.requestWhenInUseAuthorization()
     }
     
-    func requestAlwaysAuthorization() {
-        initLocationManager()
-
-        if !autorizedWhenInUse {
-            requestWhenInUseAuthorization()
-        }
-        locationManager?.requestAlwaysAuthorization()
-    }
-
     func startLocationUpdates() {
         initLocationManager()
         locationManager?.startUpdatingLocation()
-        locationMonitored = true
+//        locationMonitored = true
     }
     
     func stopLocationUpdates() {
         initLocationManager()
         locationManager?.stopUpdatingLocation()
-        locationMonitored = false
+//        locationMonitored = false
     }
 
     private func initLocationManager() {
@@ -62,23 +53,16 @@ class CoreLocationModel: NSObject, ObservableObject {
 
 extension CoreLocationModel: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        authorizationStatus = manager.authorizationStatus
+
         switch manager.authorizationStatus {
-        case .notDetermined:
-            print("When user did not yet determined")
-        case .restricted:
-            print("Restricted by parental control")
-        case .denied:
-            print("When user select option Dont't Allow")
         case .authorizedWhenInUse:
-            print("When user select option Allow While Using App or Allow Once")
-            autorizedWhenInUse = true
             locationManager?.requestLocation()
+            locationManager?.requestAlwaysAuthorization()
         case .authorizedAlways:
-            print("When user select option Change to Always Allow")
-            autorizedAlways = true
             locationManager?.requestLocation()
         default:
-            print("default")
+            ()
         }
     }
     
