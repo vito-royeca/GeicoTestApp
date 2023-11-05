@@ -26,6 +26,8 @@ class MotionDetector: ObservableObject {
     }
     
     func start() {
+        print("motionDector started")
+        
         UIDevice.current.beginGeneratingDeviceOrientationNotifications()
         orientationObserver = NotificationCenter.default.addObserver(forName: notification, object: nil, queue: .main) { [weak self] _ in
             switch UIDevice.current.orientation {
@@ -57,6 +59,8 @@ class MotionDetector: ObservableObject {
     }
 
     func stop() {
+        print("motionDector stopped")
+
         motionManager.stopDeviceMotionUpdates()
         timer.invalidate()
         if let orientationObserver = orientationObserver {

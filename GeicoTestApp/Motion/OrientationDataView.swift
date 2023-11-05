@@ -17,9 +17,11 @@ struct OrientationDataView: View {
 
     var body: some View {
         VStack {
-            Text("Horizontal: " + rollString)
-                .font(.system(.body, design: .monospaced))
-            Text("Vertical: " + pitchString)
+//            Text("Horizontal: " + rollString)
+//                .font(.system(.body, design: .monospaced))
+//            Text("Vertical: " + pitchString)
+//                .font(.system(.body, design: .monospaced))
+            Text("\(rollString), \(pitchString)")
                 .font(.system(.body, design: .monospaced))
         }
     }

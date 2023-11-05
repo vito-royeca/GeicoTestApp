@@ -42,6 +42,7 @@ struct CoreLocationView: View {
                       message: Text(error),
                       dismissButton: .default(Text("OK")))
             }
+            .navigationTitle("Map")
             .onAppear {
                 model.requestWhenInUseAuthorization()
             }

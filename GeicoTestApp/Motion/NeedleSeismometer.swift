@@ -41,7 +41,6 @@ struct NeedleSeismometer: View {
             
             Text("\(motionDetector.zAcceleration.describeAsFixedLengthString())")
                 .font(.system(.body, design: .monospaced))
-                .fontWeight(.bold)
 
             Spacer()
             

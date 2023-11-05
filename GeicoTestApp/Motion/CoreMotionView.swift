@@ -11,18 +11,22 @@ struct CoreMotionView: View {
     @EnvironmentObject var motionDetector: MotionDetector
 
     var body: some View {
-        VStack {
-            BubbleLevel()
-            OrientationDataView()
-                .padding(.top, 80)
-            NeedleSeismometer()
-        }
-        .onAppear {
-            motionDetector.start()
-        }
-        .onDisappear {
-            motionDetector.stop()
-        }
+//        GeometryReader { reader in
+            VStack() {
+                BubbleLevel()
+                OrientationDataView()
+//                    .padding()
+                    .padding(.top, 30)
+                NeedleSeismometer()
+            }
+            .onAppear {
+                motionDetector.start()
+            }
+            .onDisappear {
+                motionDetector.stop()
+            }
+            .navigationTitle("Core Motion")
+//        }
     }
 }
 
