@@ -31,13 +31,11 @@ class CoreLocationModel: NSObject, ObservableObject {
     func startLocationUpdates() {
         initLocationManager()
         locationManager?.startUpdatingLocation()
-//        locationMonitored = true
     }
     
     func stopLocationUpdates() {
         initLocationManager()
         locationManager?.stopUpdatingLocation()
-//        locationMonitored = false
     }
 
     private func initLocationManager() {
